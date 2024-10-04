@@ -9,24 +9,139 @@
 </head>
 <body>
     <header>
-        <h1>Rovers</h1>
+        <nav class="navBlack">
+            <ul class="navMenu">
+                <li>
+                    <a href="mailto:rover@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>rover@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:91 555 66 77">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <span>91 555 66 77</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user-circle"></i>
+                        <span>Usuario</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <div class="subHeaderWhite">
+                <img class="logo" src="./images/logo.jpg" alt="Logo">
+                <img class="icoHam" src="./icons/menu.svg" alt="menu hamburguesa">
+            </div>
+            <ul class="navWhite">
+                <li class="item"><a href="#">Inicio</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Menu</a></li>
+                <li class="lastItem"><a href="#">Equipo</a></li>
+              </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Sección 2</h2>
-            <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit officiis eveniet dolores praesentium ad id amet consequatur accusantium facilis excepturi, voluptate repellendus quo laborum illum! Nihil laborum tempore odit!</article>
+        <section class="section0">
+            <div class="container0">
+                <h2>Las mejores hamburguesas del mundo</h2>
+                <h4 class="primary">Bienvenido a nuestra hamburguesería</h4>
+                <h4>Come a partir de 15€</h4>      
+                <button class="cartaBtn">
+                    <a href="#">Nuestra Carta</a>
+                </button>
+            </div>
         </section>
 
-        <section>
-            <h2>Sección 3</h2>
-            <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit officiis eveniet dolores praesentium ad id amet consequatur accusantium facilis excepturi, voluptate repellendus quo laborum illum! Nihil laborum tempore odit!</article>
+        <section class="section1">
+            <div class="cabeceraArticle">
+                <h2>Nuestros <span class="primary">Servicios</span></h2>
+                <span class="separador">
+                    <span class="primary">X</span>
+                    <h4 class="line"></h4>
+                </span>
+            </div>
+
+            <article class="article1">
+                <img src="./icons/tuerca.png" alt="">
+                <h4>1. Carne 100% natural</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sed nihil quibusdam, autem, laboriosam aut commodi quas 
+                    enim, porro fugiat labore deserunt doloremque.
+                </p>
+                <div class="leerMas"">
+                    <a class="primary" href="#"">Leer más</a>
+                </div>
+            </article>
+
+            <article class="article1">
+                <img src="./icons/tuerca.png" alt="">
+                <h4>2. Cocina Moderna</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sed nihil quibusdam, autem, laboriosam aut commodi quas 
+                    enim, porro fugiat labore deserunt doloremque.
+                </p>
+                <div class="leerMas"">
+                    <a class="primary" href="#"">Leer más</a>
+                </div>
+            </article>
+
+            <article class="article1">
+                <img src="./icons/tuerca.png" alt="">
+                <h4>3. Servicio Impecable</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sed nihil quibusdam, autem, laboriosam aut commodi quas 
+                    enim, porro fugiat labore deserunt doloremque.
+                </p>
+                <div class="leerMas"">
+                    <a class="primary" href="#"">Leer más</a>
+                </div>
+            </article>
         </section>
 
-        <section>
-            <h2>Sección 4</h2>
-            <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit officiis eveniet dolores praesentium ad id amet consequatur accusantium facilis excepturi, voluptate repellendus quo laborum illum! Nihil laborum tempore odit!</article>
+        <section class="section2">
+            <div class="cabeceraArticle">
+                <h2>Sobre <span class="primary">Nosotros</span></h2>
+                <span class="separador">
+                    <span class="primary">X</span>
+                    <h4 class="line"></h4>
+                </span>
+            </div>
+
+            <div class="containerFoto">
+                <figure>
+                    <div class="marcoImg">
+                        <img src="./images/about-main.jpg" alt="">
+                    </div>
+                </figure>
+            </div>
+                
+            <article class="article2">
+                <h4>Nuestra Historia</h4>
+                <h5 class="primary">Nuestro restaurante</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sed nihil quibusdam, autem, laboriosam aut commodi quas 
+                    enim, porro fugiat labore deserunt doloremque.
+                </p>
+                <button class="cartaBtn">
+                    <a href="#">Leer más</a>
+                </button>
+            </article>
         </section>
     </main>
+
+    <footer class="footer">
+        <h4>CopyrightC2022 - Aviso Legal</h4>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,171 @@
+:root {
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-titulos: 'Handlee', cursive;
+    --color-primary: #fa573a;
+    --color-secondary: #21242e;
+    --color-inactive: #a3a3a4;
+    --color-base: #ffffff;
+    --fontsize: 1em;
+    --margingrid: 1em;
+    --anchomaximo: 68.750em;
+}
+:host, :root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+h2{
+    font-size: 32px;
+    margin: 18px 0px;
+}
+h4{
+    margin: 6px 0px
+}
+p{
+    margin: 5px 0px
+}
+.primary{
+    color: var(--color-primary);
+}
+.navBlack{
+    background-color: var(--color-secondary);   
+    margin: 0px;
+}
+.navMenu{
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.navMenu li{
+    list-style: none;
+}
+.navMenu li a{
+    text-decoration: none;
+    color: var(--color-base);
+    font-size: 20px;
+}
+.subHeaderWhite{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 15px 0px 15px;
+}
+.logo{
+    width: auto;
+    height: 30px;
+}
+.icoHam{
+    height: 35px;
+}
+.navWhite{
+    margin: 0px;
+    padding:0px 20px;
+}
+.navWhite li{
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+.item{
+    border-bottom: 1px solid var(--color-inactive);;
+}
+
+.navWhite li a{
+    text-decoration: none;
+    color: var(--color-inactive);
+    font-size: 20px;
+}
+.section0{
+    display: flex;
+    background-image: url(./images/fondo.jpg);
+    background-position-x: center ;
+    background-color: #999;
+    background-blend-mode: multiply;
+    color: #ffffff;
+    background-size: cover;
+    height: 60vh;
+}
+.container0{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.cartaBtn{
+    padding: 16px 25px;
+    background-color: var(--color-primary);
+    border: none;
+    width: 155px;
+}
+.cartaBtn a{
+    color: var(--color-base);
+}
+.line{
+    border-bottom: 2px solid var(--color-primary);
+    top: -10px;
+    position: relative;
+    width: 130px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+}
+.section2{
+    margin-bottom: 60px;
+}
+.cabeceraArticle{
+    text-align: center;
+}
+.article1, .article2 {
+    padding: 5px 20px;
+}
+  
+.article1 img{
+    border: 1px solid var(--color-primary);
+}
+
+.leerMas{
+    color: var(--color-primary);
+    width: 100%;
+    border-bottom: 2px solid var(--color-inactive);
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.containerFoto{
+    padding: 30px 5px;
+}
+
+.containerFoto figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+.marcoImg{
+    border: 3px solid var(--color-primary);
+    transition: 1s;
+    transform: rotateZ(10deg);
+}
+
+.footer{
+       display: flex;
+    flex-direction: column;
+    align-items: center;0
+    background-color: var(--color-secondary);
+    color: var(--color-base);
+    position: fixed;
+    bottom: 0px;
+    width: 100vh;
+    height: 50px;
+}
+
+  
