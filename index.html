@@ -6,6 +6,12 @@
     <title>Rovers</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./icons/all.min.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -13,40 +19,48 @@
             <ul class="navMenu">
                 <li>
                     <a href="mailto:rover@gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope fa-lg primary"></i>
                         <span>rover@gmail.com</span>
                     </a>
                 </li>
                 <li>
                     <a href="tel:91 555 66 77">
-                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-phone-flip fa-lg primary"></i>
                         <span>91 555 66 77</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa-solid fa-shopping-cart"></i>
+                        <i class="fa-solid fa-cart-shopping fa-lg primary"></i>
                         <span>Carrito</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa-solid fa-user-circle"></i>
+                        <i class="fa-solid fa-circle-user fa-lg primary"></i>
                         <span>Usuario</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <nav>
+        <nav class="navWhite">
             <div class="subHeaderWhite">
                 <img class="logo" src="./images/logo.jpg" alt="Logo">
                 <img class="icoHam" src="./icons/menu.svg" alt="menu hamburguesa">
             </div>
-            <ul class="navWhite">
-                <li class="item"><a href="#">Inicio</a></li>
-                <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Menu</a></li>
-                <li class="lastItem"><a href="#">Equipo</a></li>
+            <ul class="itemsList">
+                <li class="item">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item">
+                    <a href="#">Menu</a>
+                </li>
+                <li class="lastItem">
+                    <a href="#">Equipo</a>
+                </li>
               </ul>
         </nav>
     </header>
@@ -54,94 +68,115 @@
     <main>
         <section class="section0">
             <div class="container0">
-                <h2>Las mejores hamburguesas del mundo</h2>
-                <h4 class="primary">Bienvenido a nuestra hamburguesería</h4>
-                <h4>Come a partir de 15€</h4>      
+                <h1>Las mejores hamburguesas del mundo</h1>
+                <h3 class="primary">Bienvenido a nuestra hamburguesería</h3>
+                <h5>Come a partir de 15€</h5>      
                 <button class="cartaBtn">
-                    <a href="#">Nuestra Carta</a>
+                    <a href="#">Nuestra Carta <i class="fa-solid fa-long-arrow-alt-right"></i></a>
                 </button>
+                <ul class="rsList">
+                    <li>
+                      <a class="rsItem" href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                    </li>
+                    <li>
+                      <a class="rsItem" href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+                    </li>
+                    <li>
+                      <a class="rsItem" href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                    </li>
+                  </ul>
             </div>
         </section>
-
+        <div class="cabeceraArticle">
+            <h2>Nuestros <span class="primary">Servicios</span></h2>
+            <span class="separador">
+                <span class="primary"><strong>X</strong></span>
+                <h4 class="line"></h4>
+            </span>
+        </div>
         <section class="section1">
-            <div class="cabeceraArticle">
-                <h2>Nuestros <span class="primary">Servicios</span></h2>
-                <span class="separador">
-                    <span class="primary">X</span>
-                    <h4 class="line"></h4>
-                </span>
-            </div>
-
             <article class="article1">
-                <img src="./icons/tuerca.png" alt="">
+                <i class="fa-solid fa-cogs imageArticles primary fa-lg"></i>
                 <h4>1. Carne 100% natural</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Sed nihil quibusdam, autem, laboriosam aut commodi quas 
                     enim, porro fugiat labore deserunt doloremque.
                 </p>
                 <div class="leerMas"">
-                    <a class="primary" href="#"">Leer más</a>
+                    <a class="primary" href="#"">Leer más <i class="fa-solid fa-long-arrow-alt-right"></i></a>
                 </div>
             </article>
 
             <article class="article1">
-                <img src="./icons/tuerca.png" alt="">
+                <i class="fa-solid fa-truck imageArticles primary fa-lg"></i>
                 <h4>2. Cocina Moderna</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Sed nihil quibusdam, autem, laboriosam aut commodi quas 
                     enim, porro fugiat labore deserunt doloremque.
                 </p>
                 <div class="leerMas"">
-                    <a class="primary" href="#"">Leer más</a>
+                    <a class="primary" href="#"">Leer más <i class="fa-solid fa-long-arrow-alt-right"></i></a>
                 </div>
             </article>
 
             <article class="article1">
-                <img src="./icons/tuerca.png" alt="">
+                <i class="fa-solid fa-heart imageArticles primary fa-lg"></i>
                 <h4>3. Servicio Impecable</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Sed nihil quibusdam, autem, laboriosam aut commodi quas 
                     enim, porro fugiat labore deserunt doloremque.
                 </p>
                 <div class="leerMas"">
-                    <a class="primary" href="#"">Leer más</a>
+                    <a class="primary" href="#"">Leer más <i class="fa-solid fa-long-arrow-alt-right"></i></a>
                 </div>
             </article>
         </section>
 
-        <section class="section2">
-            <div class="cabeceraArticle">
-                <h2>Sobre <span class="primary">Nosotros</span></h2>
-                <span class="separador">
-                    <span class="primary">X</span>
-                    <h4 class="line"></h4>
-                </span>
+        <section>
+            <div class="section2">
+                <div class="cabeceraArticle">
+                    <h2>Sobre <span class="primary">Nosotros</span></h2>
+                    <span class="separador">
+                        <span class="primary"><strong>X</strong></span>
+                        <h4 class="line"></h4>
+                    </span>
+                </div>
+    
+                <div class="containerFoto">
+                    <figure>
+                        <div class="marcoImg">
+                            <img src="./images/about-main.jpg" alt="">
+                        </div>
+                    </figure>
+                </div>
+                    
+                <article class="article2">
+                    <h4>Nuestra Historia</h4>
+                    <h5 class="primary">Nuestro restaurante</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Sed nihil quibusdam, autem, laboriosam aut commodi quas 
+                        enim, porro fugiat labore deserunt doloremque.
+                    </p>
+                    <button class="cartaBtn">
+                        <a href="#">Leer más</a>
+                    </button>
+                </article>
             </div>
-
-            <div class="containerFoto">
-                <figure>
-                    <div class="marcoImg">
-                        <img src="./images/about-main.jpg" alt="">
-                    </div>
-                </figure>
-            </div>
-                
-            <article class="article2">
-                <h4>Nuestra Historia</h4>
-                <h5 class="primary">Nuestro restaurante</h5>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Sed nihil quibusdam, autem, laboriosam aut commodi quas 
-                    enim, porro fugiat labore deserunt doloremque.
-                </p>
-                <button class="cartaBtn">
-                    <a href="#">Leer más</a>
-                </button>
-            </article>
+           
         </section>
     </main>
 
     <footer class="footer">
-        <h4>CopyrightC2022 - Aviso Legal</h4>
+        <a href="#top" class="ancla">
+            <i class="fa-solid fa-square-caret-up" style="color: #fa573a;"></i>
+        </a>
+        <h5>CopyrightC2022 - Aviso Legal</h5>
     </footer>
+    <div>
+    
+
+    </div>
+
+<script src="./icons/all.js"></script>
 </body>
 </html>

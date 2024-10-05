@@ -1,24 +1,38 @@
 :root {
-    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-base: 'Montserrat', sans-serif;
     --fuente-titulos: 'Handlee', cursive;
     --color-primary: #fa573a;
     --color-secondary: #21242e;
-    --color-inactive: #a3a3a4;
+    --color-inactive: #aaa;
     --color-base: #ffffff;
-    --fontsize: 1em;
-    --margingrid: 1em;
-    --anchomaximo: 68.750em;
 }
-:host, :root {
-    --fa-style-family-classic: "Font Awesome 6 Free";
-    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+li{
+    list-style: none;
 }
-h2{
+h1, h2{
     font-size: 32px;
-    margin: 18px 0px;
+    margin: 10px 0px;
+    font-family: var(--fuente-titulos);
 }
-h4{
+h3, h4, h5, h6, p, a, span{
+    font-family: var(--fuente-base);
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 6px 0px;
     margin: 6px 0px
+}
+
+h4{
+    font-size: 18px;
+    font-weight:700;
+    margin: 10px 0px 6px 0px;
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0px;
 }
 p{
     margin: 5px 0px
@@ -40,15 +54,26 @@ p{
 .navMenu li{
     list-style: none;
 }
-.navMenu li a{
+.navMenu li a span{
     text-decoration: none;
     color: var(--color-base);
     font-size: 20px;
+    display: none;
+    font-family: var(--fuente-base)
+}
+.navMenu li a span{
+    text-decoration: none;
+    color: var(--color-base);
+    font-size: 20px;
+    display: none;
+    font-family: var(--fuente-base)
+}
+.navWhite{
+    padding: 20px;
 }
 .subHeaderWhite{
     display: flex;
     justify-content:space-between;
-    margin: 15px 15px 0px 15px;
 }
 .logo{
     width: auto;
@@ -57,23 +82,24 @@ p{
 .icoHam{
     height: 35px;
 }
-.navWhite{
+.itemsList{
     margin: 0px;
-    padding:0px 20px;
+    padding:0px;
 }
-.navWhite li{
+.itemsList li{
     list-style: none;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
 }
 .item{
     border-bottom: 1px solid var(--color-inactive);;
 }
 
-.navWhite li a{
+.itemsList li a{
     text-decoration: none;
     color: var(--color-inactive);
-    font-size: 20px;
+    font-size: 16px;
+    font-family: var(--fuente-base)
 }
 .section0{
     display: flex;
@@ -92,17 +118,29 @@ p{
     margin: 20px;
 }
 .cartaBtn{
-    padding: 16px 25px;
+    margin-top: 10px;
+    padding: 16px 15px;
     background-color: var(--color-primary);
     border: none;
-    width: 155px;
+    width: 170px;
 }
 .cartaBtn a{
     color: var(--color-base);
 }
+.rsList{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+.srItem i{
+    height: 50px;
+    color: #ffffff;
+}
+
 .line{
     border-bottom: 2px solid var(--color-primary);
-    top: -10px;
+    top: -11px;
     position: relative;
     width: 130px;
     display: block;
@@ -110,7 +148,7 @@ p{
     border-radius: 5px;
 }
 .section1{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     margin-bottom: 55px;
@@ -121,12 +159,13 @@ p{
 .cabeceraArticle{
     text-align: center;
 }
-.article1, .article2 {
-    padding: 5px 20px;
+.article1{
+    padding: 15px 20px 5px 20px;
 }
   
-.article1 img{
+.imageArticles{
     border: 1px solid var(--color-primary);
+    padding: 8px;
 }
 
 .leerMas{
@@ -157,15 +196,76 @@ p{
 }
 
 .footer{
-       display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;0
+    align-items: center;
     background-color: var(--color-secondary);
     color: var(--color-base);
     position: fixed;
     bottom: 0px;
-    width: 100vh;
+    width: 100%;
     height: 50px;
+}
+.ancla{
+    position: absolute;
+    top: -55px;
+    left: 90%;
+    font-size: 3em;
+}
+
+@media (min-width:786px) {
+    .navMenu li a span{
+        display: inline-block;
+    }
+    .section1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0px 5px;
+    }
+    .article1{
+        width: 40%;
+        border-left: 1px solid var(--color-inactive);
+        margin-bottom: 10px;
+        .leerMas{
+            border-bottom: none;
+        }
+    }
+
+    
+}
+
+@media (min-width:1004px) {
+    .icoHam{
+    display: none;
+    }
+
+    .navWhite{
+    display: flex;
+    justify-content:space-between;
+    } 
+    .itemsList{
+        display: flex;
+        gap:30px;
+    }
+
+    .item {
+        border-bottom: none;
+    }
+    .itemsList li{
+        padding: 0px;
+    }
+
+    .article1{
+        width: 28%;
+    }
+
+    .section1, .section2{
+        max-width: 1020px;
+        justify-content: center;
+        margin: auto;
+    }
 }
 
   
