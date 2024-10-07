@@ -61,13 +61,6 @@ p{
     display: none;
     font-family: var(--fuente-base)
 }
-.navMenu li a span{
-    text-decoration: none;
-    color: var(--color-base);
-    font-size: 20px;
-    display: none;
-    font-family: var(--fuente-base)
-}
 .navWhite{
     padding: 20px;
 }
@@ -79,9 +72,7 @@ p{
     width: auto;
     height: 30px;
 }
-.hamburguesa:hover{
 
-}
 .icoHam{
     height: 35px;
 }
@@ -129,11 +120,6 @@ p{
     justify-content: space-between;
     padding: 0px;
 }
-.srItem i{
-    height: 50px;
-    color: #ffffff;
-}
-
 .line{
     border-bottom: 2px solid var(--color-primary);
     top: -11px;
@@ -143,14 +129,13 @@ p{
     margin: auto;
     border-radius: 5px;
 }
-
 .section0{
     display: flex;
     background-image: url(./images/fondo.jpg);
     background-position-x: center ;
-    background-color: #999;
+    background-color: var(--color-inactive);
     background-blend-mode: multiply;
-    color: #ffffff;
+    color: var(--color-base);
     background-size: cover;
     height: 60vh;
     margin-bottom: 50px;
@@ -161,19 +146,16 @@ p{
     align-items: center;
     margin-bottom: 50px;
 }
-
 .cabeceraArticle{
     text-align: center;
 }
 .article1, .article2{
     padding: 5px 20px 15px 20px;
-}
-  
+}  
 .imageArticles{
     border: 1px solid var(--color-primary);
     padding: 8px;
 }
-
 .leerMas{
     color: var(--color-primary);
     width: 100%;
@@ -181,11 +163,9 @@ p{
     font-weight: bolder;
     padding-bottom: 15px;
 }
-
 .containerFoto{
     padding: 30px 5px;
 }
-
 .containerFoto figure img{
     width: 100%;
     height: auto;
@@ -194,18 +174,14 @@ p{
     transform: rotateZ(-12deg);
     transition: 1s;
 }
-
 .marcoImg{
     border: 4px solid var(--color-primary);
     transition: 1s;
     transform: rotateZ(12deg);
-
 }
 .marcoImg img:hover{
     transform: rotateZ(0deg);
 }
-
-
 .marcoImg:hover{
     transition: 1s;
     transform: rotateZ(0deg);
@@ -251,41 +227,34 @@ p{
     fugure{
         margin: auto 10px auto 0px;
     }
-
-    
 }
 
 @media (min-width:1004px) {
     .icoHam{
-    display: none;
+        display: none;
     }
-
     .navWhite{
-    display: flex;
-    justify-content:space-between;
+        display: flex;
+        justify-content:space-between;
     } 
     .itemsList{
         display: flex;
         gap:30px;
     }
-
     .item {
         border-bottom: none;
     }
     .itemsList li{
         padding: 0px;
     }
-
     .article1{
         width: 28%;
     }
-
     .section1, .section2{
         max-width: 1020px;
         justify-content: center;
         margin: auto auto 55px auto;
-    }
-        
+    }  
     .container0, .navWhite, .navMenu{
         width: 1020px;
         margin: auto;
